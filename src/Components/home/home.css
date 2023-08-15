@@ -1,0 +1,95 @@
+.container-home{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-home .logo{
+    position: inherit;
+    margin-top: -50px;
+    height: 520px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.container-home .logo .main-img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.container-home .logo .main-img.active{
+    animation: spin 8s linear 1s infinite;
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.home-container .logo .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4, 5, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+
+.home-container .logo .main-img.active .circle{
+    opacity: 1;
+}
+
+.home-container -logo .main-img.active .circle:nth-child(1){
+    background:url(../props/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(-210%);
+
+}
+.home-container -logo .main-img.active .circle:nth-child(2){
+    background:url(../props/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, -150%);
+    
+}
+.home-container -logo .main-img.active .circle:nth-child(3){
+    background:url(../props/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(210%);
+    
+}
+
+.home-container -logo .main-img.active .circle:nth-child(4){
+    background:url(../props/html.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(150%, -150%);
+    
+}
